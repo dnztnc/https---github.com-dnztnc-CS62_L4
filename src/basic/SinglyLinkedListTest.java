@@ -4,7 +4,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Iterator;
+
+/* @author Deniz Tanaci
+* This class is used to test the methods of the SinglyLinkedList class with jUnit 
+*/
 
 class SinglyLinkedListTest {
 
@@ -42,7 +45,7 @@ class SinglyLinkedListTest {
 		l.add(3);
 		assertEquals(l.get(0), 3);
 	}
-
+	// testing removal
 	@Test
 	void testRemove() {
 		l.add(1);
@@ -52,7 +55,7 @@ class SinglyLinkedListTest {
 		assertEquals(l.get(0), compare);
 
 	}
-	
+	// testing size
 	@Test
 	void testSize() {
 		l.add(1);
@@ -60,7 +63,7 @@ class SinglyLinkedListTest {
 		assertEquals(l.size(), 2);
 
 	}
-		
+	// testing clear
 	@Test
 	void testClear() {
 		l.add(1);
@@ -69,7 +72,7 @@ class SinglyLinkedListTest {
 		assertEquals(l.size(), 0);
 
 	}
-
+	// testing isEmpty
 	@Test
 	void testIsEmpty() {
 		l.add(1);
